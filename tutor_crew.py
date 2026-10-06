@@ -5,7 +5,7 @@ from tools import calculate_expression
 def get_groq_llm(api_key: str):
     """Initializes the Groq LLM for CrewAI."""
     return LLM(
-        model="groq/llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         api_key=api_key,
         temperature=0.5
     )
